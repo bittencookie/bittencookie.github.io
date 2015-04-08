@@ -407,6 +407,10 @@ header .menu-button.white span, header .menu-button.white span:before, header .m
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  color: white;
+}
+.header-menu .options h2:hover {
+  color: #ead724;
 }
 
 footer p {
@@ -761,14 +765,86 @@ footer p.copyright {
   display: none;
 }
 
+section.work-info {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 0;
+}
+section.work-info:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+section.work-info aside {
+  font-family: "Libre Baskerville", serif;
+  font-weight: bolder;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  margin-left: 25.58941%;
+}
+section.work-info aside:last-child {
+  margin-right: 0;
+}
+section.work-info article {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+section.work-info article:last-child {
+  margin-right: 0;
+}
+
+section.more-works {
+  padding-top: 20px;
+  background-color: #ead724;
+  text-align: center;
+}
+section.more-works .works-list {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 90px 0;
+}
+section.more-works .works-list:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+section.more-works .works-list .work-block {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+}
+section.more-works .works-list .work-block:last-child {
+  margin-right: 0;
+}
+section.more-works .works-list .work-block div {
+  padding: 5px;
+  width: 100%;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: 2em;
+  text-align: left;
+}
+
 html {
   height: 100%;
 }
 
 body {
   background-color: #FFF;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
   height: 100%;
+}
+
+h1, h2 {
+  font-family: "Libre Baskerville", serif;
 }
 
 .show {
