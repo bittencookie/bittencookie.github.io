@@ -279,7 +279,7 @@ input[type="submit"] {
 }
 
 header {
-  height: 65px;
+  height: 75px;
   padding: 15px;
 }
 header * {
@@ -297,10 +297,14 @@ header .branding {
   display: block;
   margin-right: 2.35765%;
   width: 40.29137%;
-  height: 50px;
+  height: 60px;
 }
 header .branding:last-child {
   margin-right: 0;
+}
+header a {
+  margin-top: 20px;
+  margin-left: 10px;
 }
 header .burguer {
   z-index: 10;
@@ -413,10 +417,12 @@ header .menu-button.white span, header .menu-button.white span:before, header .m
   transform: translateY(-50%);
   color: white;
   margin-bottom: 20px;
-  font-size: 3em;
+  font-size: 6em;
+  font-family: "lato",sans serif;
+  letter-spacing: 5px;
 }
 .header-menu .options h2:hover {
-  color: #ead724;
+  color: #EFC40C;
 }
 
 footer p {
@@ -434,7 +440,7 @@ footer p.copyright {
   width: 100%;
   height: 100%;
   min-height: 250px;
-  background-color: #ead724;
+  background-color: #EFC40C;
 }
 .splash .logo {
   position: relative;
@@ -565,9 +571,14 @@ footer p.copyright {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   color: white;
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 6em;
+  font-family: lato,sans serif;
+  letter-spacing: 5px;
 }
 .menu .options h2:hover {
-  color: #ead724;
+  color: #EFC40C;
 }
 
 .text-container {
@@ -584,14 +595,18 @@ footer p.copyright {
 }
 .text-container .highlight-text {
   text-decoration: none;
-  color: #333;
+  color: black;
 }
 .text-container .highlight-text:hover {
-  color: #ead724;
+  color: #EFC40C;
+}
+.text-container h1.bigger {
+  font-size: 3.5em;
+  margin-top: 40px;
 }
 
 .punchline {
-  height: calc(100% - 65px);
+  height: calc(100% - 75px);
   height: -moz-calc(100% - $header-height);
   text-align: center;
 }
@@ -606,7 +621,7 @@ footer p.copyright {
   clear: both;
 }
 .punchline .text-container .highlight-text:hover {
-  color: #ead724;
+  color: #EFC40C;
 }
 .punchline * {
   position: relative;
@@ -617,7 +632,9 @@ footer p.copyright {
 }
 
 .team-section {
-  background-color: #EBE559;
+  background-color: #EFC40C;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .team-section .team {
   max-width: 68em;
@@ -630,9 +647,14 @@ footer p.copyright {
   display: table;
   clear: both;
 }
+.team-section .team h1 {
+  margin-bottom: 60px;
+  font-size: 3.5em;
+  color: black !important;
+}
 .team-section .team a {
   text-decoration: none;
-  color: #333;
+  color: black;
 }
 .team-section .team .member {
   background-image: url("/img/cartman.jpg");
@@ -655,33 +677,11 @@ footer p.copyright {
 .team-section .team .member:last-child {
   width: 16.5961%;
 }
-.team-section .team .member .caption {
-  opacity: 0;
-  padding: 2px 0;
-  background: #333;
-  text-align: center;
-  font-weight: bold;
-  position: relative;
-  height: 40%;
-  bottom: -72%;
-  vertical-align: bottom;
-  margin-right: 22.5%;
-  margin-left: 22.5%;
-}
-.team-section .team .member .caption .name {
-  color: #f7fa1f;
-}
-.team-section .team .member .caption .position {
-  color: #EBE559;
-}
-.team-section .team .member:hover .caption {
-  opacity: 0.7;
-}
 
 section .portfolio-link * {
   text-decoration: none;
   text-align: center;
-  color: #333;
+  color: black;
 }
 
 .p-position {
@@ -718,7 +718,7 @@ section .portfolio-link * {
   }
 }
 .article_footer .list_item strong, .article_footer .list_item dt {
-  color: #333;
+  color: black;
 }
 
 @media screen and (max-width: 24.9375em) {
@@ -809,7 +809,7 @@ section .portfolio-link * {
   }
 }
 .summary_meta strong, .summary_meta dt, .summary_vote strong, .summary_vote dt {
-  color: #333;
+  color: black;
 }
 
 .summary_vote {
@@ -1156,8 +1156,9 @@ section .portfolio-link * {
 }
 .contacts {
   padding: 50px 0;
+  margin-top: 45px !important;
   text-align: center;
-  background-color: #ead724;
+  background-color: #EFC40C;
 }
 .contacts .title {
   color: #FFF;
@@ -1199,8 +1200,9 @@ section .portfolio-link * {
 
 .where {
   background: url("/img/mapgrey.png") center;
+  background-size: cover;
   color: #FFF;
-  height: 300px;
+  height: 500px;
   position: relative;
   left: 0;
   top: 0;
@@ -1262,12 +1264,15 @@ section .portfolio-link * {
 }
 .work {
   position: relative;
-  height: calc(100% - 65px);
+  height: calc(100% - 75px);
   height: -moz-calc(100% - $header-height);
   text-align: center;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 45px !important;
   cursor: pointer;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
@@ -1290,6 +1295,7 @@ section .portfolio-link * {
 }
 .work:hover .work-name {
   display: block;
+  color: white;
 }
 .work * {
   position: relative;
@@ -1302,7 +1308,7 @@ section .portfolio-link * {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #eee053;
+  background-color: #f5d139;
   opacity: 0.6;
 }
 .work .work-name {
@@ -1313,11 +1319,16 @@ section.work-carrousel {
   max-width: 68em;
   margin-left: auto;
   margin-right: auto;
+  max-height: 250px;
 }
 section.work-carrousel:after {
   content: "";
   display: table;
   clear: both;
+}
+section.work-carrousel * {
+  max-height: 250px;
+  width: 100%;
 }
 
 section.work-info {
@@ -1355,7 +1366,7 @@ section.work-info article:last-child {
 
 section.more-works {
   padding-top: 20px;
-  background-color: #ead724;
+  background-color: #EFC40C;
   text-align: center;
 }
 section.more-works .works-list {
@@ -1374,6 +1385,8 @@ section.more-works .works-list .work-block {
   display: block;
   margin-right: 2.35765%;
   width: 23.23176%;
+  margin-right: 1.76765%;
+  margin-top: 15px;
 }
 section.more-works .works-list .work-block:last-child {
   margin-right: 0;
