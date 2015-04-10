@@ -13,7 +13,7 @@ html {
 
 /* Bitters 0.10.0
  * http://bitters.bourbon.io
- * Copyright 2013–2014 thoughtbot, inc.
+ * Copyright 2013ÔÇô2014 thoughtbot, inc.
  * MIT License */
 button,
 input[type="submit"] {
@@ -732,7 +732,7 @@ section .portfolio-link * {
   }
 
   .article_footer .list_item::after {
-    content: "•";
+    content: "ÔÇó";
     margin: 0 0.3334rem;
     opacity: 0.5;
   }
