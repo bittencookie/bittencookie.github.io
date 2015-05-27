@@ -1160,6 +1160,12 @@ section .portfolio-link * {
   text-align: center;
   background-color: #EFC40C;
 }
+.contacts a {
+  color: black;
+  border: 2px solid black;
+  background-color: white;
+  padding: 8px 12px;
+}
 .contacts .title {
   color: #FFF;
   font-size: 3em;
